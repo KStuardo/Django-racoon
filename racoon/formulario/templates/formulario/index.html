@@ -1,0 +1,304 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Principal</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="icon" type="image/vnd.icon" href=" {% static 'images/racoon.logo.png' %}">
+  <!-- centrar texto desde nuestro impacto-->
+  <link rel="icon" type="image/png" href=" {% static 'images/favicom.png ' %}">
+</head>
+
+<body>
+  <header>
+    <!-- Menu de navegacion -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="" alt="Logo" width="150"
+            height="150" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Quienes Somos</a>
+            <li class="nav-item dropdown">
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu bg-secondary">
+                <li><a class="dropdown-item" href="">Ciberseguridad</a></li>
+                <li><a class="dropdown-item" href="">Inteligencia Artificial</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="">Noticias Duocs</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="">Cursos</a>
+            </li>
+
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Usuarios
+            </button>
+            </li>
+            </li>
+          </ul>
+
+          </ul>
+          <!--buscar btn-->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    
+    <!-- carrusel noticias-->
+  
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/ciberlogo.png' %}" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ley Marco de Ciberseguridad es publicada en el Diario Oficial</h5>
+            <p>
+              Con la publicación en el Diario Oficial, la Ley N°21.663 Marco de Ciberseguridad se convierte en ley el
+              modelo de gobernanza en ciberseguridad
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/ialogo.gif' %}"
+            class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Como la IA Podria cambiar el mundo</h5>
+            <p>
+              Funciones y características de la Inteligencia Artificial
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{static 'images/noticiaslogora.png' %}" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>"Competencia de Robótica"
+            </h5>
+            <p>Premio al Excelente Innovador Informático del Año</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <!--cards-->
+  <main>
+    <div class="card-group bg-black container-fluid">
+      <div class="card bg-dark ">
+        <img src="{% static 'images/1-2.2e16d0ba.fill-800x400.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white">¿Como Identificar Una Fake News?</h5>
+          <p class="card-text text-white">concejos y mas sobre las fake news.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-warning bg-warning text-black" target="_blank"
+            href="https://ciberseguridad.gob.cl/ciberconsejos/como-identificar-las-fake-news/" role="button">Revisa
+            aqui</a>
+        </div>
+      </div>
+      
+      <div class="card bg-dark">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white">Como Proteger Tus Datos de Hackers</h5>
+          <p class="card-text text-white">Como protegerte de los Ciberdelicuentes.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-warning bg-warning text-black" target="_blank"
+            href="https://ciberseguridad.gob.cl/ciberconsejos/como-proteger-tus-datos-personales/" role="button">Revisa
+            aqui</a>
+        </div>
+      </div>
+      <div class="card bg-dark">
+        <img src="{% static 'images/Ciberacoso.2e16d0ba.fill-800x400.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white">Como Evitar los Ciberacosos</h5>
+          <p class="card-text text-white">Como evitarlos y cuidar de los nuestros.</p>
+        </div>
+        <div class="card-footer ">
+          <a class="btn btn-warning bg-warning text-black" target="_blank"
+            href="https://ciberseguridad.gob.cl/ciberconsejos/como-protegerse-del-ciberacoso/" role="button">Revisa
+            aqui</a>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+ 
+
+  <div class="container-fixed ">
+    <div>
+      <img src="{% static 'images/portada ciit.jpg' %}"  alt="portada ciit"  height="240" width="1390">
+    </div>
+    
+  </div>
+   
+
+
+   
+
+  <!-- footer -->
+  <footer class="site-footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>NOSOTROS</h6>
+          <p class="text-justify">En CaosNews.cl nos esforzamos por ayudar a los programadores emergentes a comprender y
+            dominar las complejidades del desarrollo de software.Ofrecemos una amplia gama de cursos online en
+            diferentes lenguajes de programación, incluyendo C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP,
+            Android, SQL y Algoritmos. </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a href="MisionVision.html">Quienes Somos</a></li>
+            <li><a href="ciberseguridad.html">Ciber Seguridad</a></li>
+            <li><a href="IA.html">Inteligencia Artificial</a></li>
+            <li><a href="noticiasDuoc.html">Noticias Duoc</a></li>
+            <li><a href="Carrito.html">Cursos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Referencias</h6>
+          <ul class="footer-links">
+            <li><a href="FormularioPeriodista.html">Trabaja con nosotros</a></li>
+            <li><a href="/ProyectoWeb/FormularioUsuarios.html">Registrate</a></li>
+            <li><a href="/">Inicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">&copy; 2024 Raccoon-Devs.cl Todos los derechos reservados.
+            <a href="{% static 'images/racoon.logo.png' %}">Raccoon-Devs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://web.facebook.com/"><i class="fa fa-facebook"><img
+                    src="{% static 'images/facebook (4).png' %}" alt="facebook logo" width="30" height="30"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"><img
+                    src="{% static 'images/youtube (1).png' %}" alt="youtube logo" width="30" height="30"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"><img
+                    src="{% static 'images/twitter (1).png' %}" alt="twitter logo" width="30" height="30"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"><img
+                    src="{% static 'images/instagram (8).png' %}" alt="instagram logo" width="30" height="30"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+         
+          <img src="{% static 'images/racoon.logo-removebg-preview.png' %}" alt="logo" width="260px"
+            height="260px">
+            
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form class="m-2">
+              <div class="mb-3">
+
+                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-white">Recuerda no compartir tus contraseñas</div>
+              </div>
+              <div class="mb-3">
+
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                <br>
+                <a href="#" class="form-check-label" for="exampleCheck1">Olvide mi contraseña</a>
+                <a href="FormularioUsuarios.html" class="form-check-label"
+                  for="exampleCheck1">Registrarse</a>
+              </div>
+
+              <button type="submit" class="btn btn-warning">Ingresar</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript Libraries --->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
