@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Noticias DuocUC</title>
+  <link rel="icon" type="image/png" href="images/favicom.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS v5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/vnd.icon" href="/ProyectoWeb/images/racoon.logo.png">
+  
+
+</head>
+
+<body>
+  <header>
+    <!-- Menu de navegacion -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/racoon.logo-removebg-preview.png" alt="Logo" width="150"
+            height="150" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="MisionVision.html">Quienes Somos</a>
+                      <li class="nav-item dropdown">
+
+                  <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorias
+                      </a>
+                      <ul class="dropdown-menu bg-secondary">
+                          <li><a class="dropdown-item" href="ciberseguridad.html">Ciberseguridad</a></li>
+                          <li><a class="dropdown-item" href="IA.html">Inteligencia Artificial</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duocs</a></li>
+                          </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="Carrito.html">Cursos</a>
+                  </li>
+
+                  <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Usuarios
+                </button> 
+                  
+
+                  </li>
+                  </li>
+                  </ul>
+                  
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  </header>
+  <!-- boton volver -->
+  <br>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end container-fluid">
+    <a href="javascript:history.back()" class="btn btn-primary" role="button">Volver</a>
+  </div>
+
+  <br><br>
+  <!--  fin boton volver -->
+
+  <body>
+    <!--card principal-->
+    <div class="card text-bg-dark">
+      <img src="images/noticias duoc fondo.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay ">
+        <h1 class="card-title-center">NOTICIAS INFORMATICAS</h1>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid p-0 bg-black" >
+      <div class="row justify-content-center  align-items-center">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <h3 class="text-dark mb-0">Competencia de Robótica</h3>
+              <div class="mb-1 text-muted">12 DICIEMBRE, 2023</div>
+              <p class="card-text mb-auto">Se llevó a cabo con éxito en Sede San Andrés de Concepción</p>
+              <br> <br>
+              <a href="#Robotica" >Continuar leyendo</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" src="images/Noticia 1.jpg" style="width: 55%">
+          </div>
+        </div>
+        <div class="col-md-6 bg-black">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250 ">
+            <div class="card-body d-flex flex-column align-items-start">
+              <h3 class="text-dark mb-0">Alianza estratégica con Telecomunicaciones</h3>
+              <div class="mb-1 text-muted">13 MARZO, 2024</div>
+              <p class="card-text mb-auto">El curso para acortar la brecha digital en sectores rurales</p>
+              <br>
+              <a href="#brechadigital">Continuar leyendo</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" src="images/Noticia 3.jpg" style="width: 50%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-post text-white"id="Robotica">
+      <h2 class="blog-post-title">Competencia de Robótica</h2>
+      <p class="blog-post-meta">PUBLICADO EL 12 DICIEMBRE, 2023 “Arena San Andrés 2023” </p>
+      <img src="images/Noticia 1.jpg" height="300" class="mb-3 img-fluid">
+      <strong>
+        <p>Más de 90 estudiantes de Duoc UC provenientes de todas las sedes de Chile y colegios de la comuna,
+          participaron el pasado 11 de noviembre en la competencia de robótica Arena San Andrés 2023, evento donde los
+          participantes demostraron sus capacidades en robótica y espíritu de sana competencia.</p>
+      </strong>
+      <hr>
+      <p> Organizada por la Escuela de Informática y Telecomunicaciones de Duoc UC y sede San Andrés de Concepción, en
+        conjunto con el Centro de Innovación y Transferencia Tecnológica CITT Duoc UC, la iniciativa contempló
+        exhibiciones, competencias, y diversas actividades vinculadas al ámbito de la robótica. Esta actividad buscaba
+        proporcionar una instancia presencial de desafíos vinculados a la Robótica y Videojuegos, en la cual los
+        participantes pudieron demostrar sus habilidades en programación, ingenio y trabajo en equipo.
+        Los tracks de la competencia fueron pelea de robots bípedos, Duckietown, traslado de elementos con robots
+        bípedos, torneo de videojuegos y demostración de proyectos y actividades de robótica realizadas por colegios.
+        Claudio Alcota, subdirector de Proyectos de la Escuela de Informática y Telecomunicaciones, comentó que esta
+        competencia “se enmarca en el trabajo que desarrollan durante todo el año estudiantes y docentes para acercarse
+        a este mundo tan avanzado como la robótica, así estar a la vanguardia de las nuevas tecnologías que se
+        desarrollan y acercarlas a las personas”.
+        “Me parece maravilloso, además de dar a conocer nuestra Sede, es genial ver que hay más mujeres que se dedican a
+        la robótica y que estudian en Duoc. También es motivante ver que hay empresas que se interesan en apoyarnos en
+        estas iniciativas y promover la robótica. Aumentan las ganas de seguir, participar y dar a conocer todo esto”,
+        señaló Jenniffer Coñuel, estudiante de la Escuela de Informática de Duoc UC Sede San Andrés de Concepción.
+        Esta competencia congregó a estudiantes y docentes de las carreras de Ingeniería en Informática, Ingeniería en
+        Conectividad y Redes, Administración de Redes y Telecomunicaciones y Analista Programador Computacional y
+        colegios de la comuna, en equipos preparados para participar en las distintas competencias, donde se caracterizó
+        el espíritu de compañerismo, colaboración y sana competencia.</a>
+      </p>
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <div class="blog-post text-white" id="brechadigital">
+      <h2 class="blog-post-title">Esta alianza estratégica con una de las compañías de telecomunicaciones más grande del
+        país.</h2>
+      <p class="blog-post-meta">PUBLICADO EL 13 MARZO, 2024 </p>
+      <img src="images/Noticia 2.jpg" height="300" class="mb-3 img-fluid">
+      <strong>
+        <p> El curso que impartirá Duoc UC y WOM para acortar la brecha digital en sectores rurales</p>
+      </strong>
+      <hr>
+      <p> Nace la “Beca WOM Duoc UC”: un convenio clave entre ambas instituciones que permitirá que cientos de jóvenes
+        que ingresan a la educación superior universitaria, técnica y profesional, en diferentes regiones de país puedan
+        optar a un curso de habilidades digitales impartido por docentes de nuestra Escuela de Informática y
+        Telecomunicaciones.
+
+        Además, se les entregará una Tablet, donde aprenderán a ocupar los programas de Microsoft Office para crear
+        planillas de cálculos o diseñar presentaciones. Este programa llegará a estudiantes de zonas del país donde
+        presentan una cobertura de internet escasa o nula.
+
+        Claudio Duce, Director General de Admisión, Comunicación y Extensión de Duoc UC destaca el compromiso social que
+        refleja este convenio: “estamos decididos a cultivar un entorno donde la tecnología y la educación converjan
+        para transformar vidas, proporcionando todas las habilidades esenciales que se requieren para el siglo XXI. Esta
+        alianza no se limita a las aulas, sino que se extiende a la comunidad en general, facilitando la adopción de
+        tecnologías educativas en comunidades marginadas y generando un impacto positivo a largo plazo”
+
+        El Vicepresidente de Asuntos Corporativos de WOM Chile, Eduardo Jara, explica los alcances de la beca: “estamos
+        abriendo oportunidades de desarrollo e inclusión en el ámbito educativo para futuros técnicos y profesionales
+        que viven en comunas rurales del país. Uno de los principales desafíos que tenemos como compañía no es solamente
+        llevar conectividad a sectores con menos accesos, sino que además que gracias a esa conexión a internet la vida
+        de millones de personas en Chile cambie”.
+
+        Quienes resulten beneficiados con esta beca, a la que pueden postular estudiantes de cualquier establecimiento
+        educacional, verán en ella una oportunidad de desarrollo no solo académico, sino que a nivel personal y
+        familiar.
+
+        Alejandra Acuña, Directora de la Escuela de Informática y Telecomunicaciones: “reducir la brecha digital nos
+        permite dar más oportunidades a las personas, es la forma que vemos para aumentar la productividad, tener mayor
+        alcance, educación, y comunicación, que facilite la conexión y el intercambio de información, abriendo espacios
+        a otras latitudes del mundo. Por lo tanto, creemos que la tecnología está ayudando a tener una sociedad mejor,
+        sin desconocer los desafíos que esto significa”.
+
+        Si quieres conocer todos los vínculos que tiene Duoc UC con marcas y empresas líderes del país, pincha <a
+          href=" https://www.duoc.cl/nosotros/vinculacionconelmedio/"> aca.</a>
+      </p>
+    </div>
+    <br><br><br><br><br><br>
+
+
+    <div class="blog-post text-white">
+      <h2 class="blog-post-title bg-warning ">Premio al Excelente Innovador Informático del Año</h2>
+      <p class="blog-post-meta">PUBLICADO EL 09 ABRIL, 2024 </p>
+      <img src="images/hernancito.jpg" height="800px" width="600px" class="mb-3 img-fluid" >
+      <h2 class="bg-warning">Premio al Excelente Innovador Informático del Año</h2>
+      <h5> Hernán Saavedra González</h5>
+      <p><strong> INGENIERO CIVIL INFORMÁTICO - MÁSTER EN GESTIÓN EDUCACIONAL </p></strong>
+      <hr>
+      <p> Este prestigioso reconocimiento se otorga al profesor cuya pasión por la enseñanza y la innovación en el campo
+        de la informática ha destacado de manera excepcional durante el año. Este galardón celebra no solo el dominio
+        técnico del profesor, sino también su habilidad para inspirar y guiar a sus estudiantes en el emocionante mundo
+        de la tecnología.
+
+        El ganador de este premio ha demostrado un compromiso sobresaliente con el aprendizaje continuo, adoptando
+        metodologías innovadoras, herramientas de vanguardia y enfoques pedagógicos creativos que estimulan la
+        curiosidad y el desarrollo de habilidades en sus alumnos.
+
+        Además de sus logros técnicos, el Profesor del Año en el Área de Informática es reconocido por su capacidad para
+        crear un entorno de aprendizaje inclusivo, fomentando la diversidad y el respeto entre sus estudiantes, y
+        promoviendo una cultura de colaboración y trabajo en equipo.
+
+        Este premio es un testimonio del impacto positivo que el profesor ha tenido en la comunidad educativa y en el
+        sector de la tecnología, inspirando a las generaciones futuras de profesionales informáticos y contribuyendo
+        significativamente al avance de la sociedad digital.</a>
+      </p>
+      
+      <ul>
+        <li>
+          <hr>
+          <strong>Experiencia Profesional en Informática:</strong> Hernán ha dedicado más de 23 años al Ministerio de
+          Obras Públicas, comenzando como Developer y ascendiendo hasta el cargo de Jefe Regional del área de
+          Administración General, Infraestructura y Control de Bienes. Su experiencia práctica en el campo de la
+          informática y su liderazgo en proyectos informáticos de gran envergadura son destacables.
+        </li>
+        <li><strong>Trayectoria Docente Sobresaliente:</strong> Hernán no solo se destaca en el ámbito profesional, sino
+          también en el académico. Ha sido docente en diversas instituciones educativas, incluyendo la Universidad
+          Técnica Federico Santa María, DuocUC, INACAP, entre otras. Su habilidad para transmitir conocimientos en
+          lenguajes de programación como JAVA, así como en temas de estructuras de datos y tecnologías informáticas, lo
+          convierte en un referente en el ámbito educativo.
+        </li>
+        <li><strong>Formación Continua y Certificaciones:</strong> Además de su formación como Ingeniero Civil
+          Informático y su Máster en Gestión Educacional, Hernán ha obtenido certificaciones en áreas clave como Data
+          Science en Google Cloud, Oracle Certified Professional en Java SE 6 Programmer y AWS Academy Educator. Su
+          compromiso con la actualización constante y la adquisición de habilidades técnicas relevantes es evidente en
+          su perfil.
+        </li>
+        <li>
+          <strong>Contribuciones Internacionales:</strong> Hernán no se limita a su trabajo en Chile; ha dado charlas
+          magistrales y capacitaciones en Perú y México, lo que demuestra su impacto más allá de las fronteras
+          nacionales en la educación y la tecnología.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="team-section">
+      <div class="row justify-content-center">
+        <div class="m-0 vh-100 row justify-content-center aling-items-center">
+          <!-- como centrar "m-0 vh-100 row justify-content-center aling-items-center"-->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4">
+              <img src="images/HernanSaavedra.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Profesor Hernan Saavedra</h5>
+              <span class="small text-uppercase text-muted">Ingeniero Civil Informático - Máster en Gestión
+                Educacional</span>
+              <div class="enlaces">
+                <br><br>
+                <a href="https://cl.linkedin.com/in/hernansaavedrag" target="_blank"><img src="images/linked.png"
+                    alt="linkedin logo" width="30" height="30"></a>
+                <a href="https://www.instagram.com/profehernansaavedra/" target="_blank"><img src="images/instagram.png"
+                    alt="instagram logo" width="30" height="30"></a>
+                <a href="https://www.youtube.com/c/HernanSaavedra" target="_blank"><img src="images/youtube2.png"
+                    alt="youtube logo" width="30" height="30"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--- video -->
+    <h1 class="bg-warning text-white">CHARLA TED</h1>
+    <div class="container">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/H_yvTRh9K3A?rel=0" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!--fin video-->
+
+
+
+
+
+  </body>  
+  <!-- Site footer -->
+  <footer class="site-footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>NOSOTROS</h6>
+          <p class="text-justify">En CaosNews.cl nos esforzamos por ayudar a los programadores emergentes a comprender y dominar las complejidades del desarrollo de software.Ofrecemos una amplia gama de cursos online en diferentes lenguajes de programación, incluyendo C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL y Algoritmos. </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categorias</h6>
+          <ul class="footer-links">
+            <li><a href="MisionVision.html">Quienes Somos</a></li>
+            <li><a href="ciberseguridad.html">Ciber Seguridad</a></li>
+            <li><a href="IA.html">Inteligencia Artificial</a></li>
+            <li><a href="noticiasDuoc.html">Noticias Duoc</a></li>
+            <li><a href="Carrito.html">Cursos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Referencias</h6>
+          <ul class="footer-links">
+            <li><a href="FormularioPeriodista.html">Trabaja con nosotros</a></li>
+            <li><a href="/ProyectoWeb/FormularioUsuarios.html">Registrate</a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">&copy; 2024 CaosNews.cl Todos los derechos reservados. 
+            <a href="images/racoon.logo.png">Raccoon-Devs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">         
+            <li><a class="facebook" href="https://web.facebook.com/"><i class="fa fa-facebook"><img src="images/facebook (4).png" alt="facebook logo"width="30" height="30"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"><img src="images/youtube (1).png" alt="youtube logo"width="30" height="30"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"><img src="images/twitter (1).png" alt="twitter logo"width="30" height="30"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"><img src="images/instagram (8).png" alt="instagram logo"width="30" height="30"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+ 
+  
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <img src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png" alt="logo" width="100px" height="100px">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ingreso Usuarios</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container"> 
+            <form class="m-2">
+              <div class="mb-3">
+                
+                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Recuerda no compartir tus contraseñas</div>
+              </div>
+              <div class="mb-3">
+                
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                
+                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                <br>
+                <a href="#" class="form-check-label" for="exampleCheck1">Olvide mi contraseña</a>
+                <a href="/ProyectoWeb/FormularioUsuarios.html" class="form-check-label" for="exampleCheck1">Registrarse</a>
+              </div>
+              
+              <button type="submit" class="btn btn-warning">Ingresar</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Bootstrap JavaScript Libraries -->
+  <script
+   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+   crossorigin="anonymous"
+  ></script>
+  
+  <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+   integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+   crossorigin="anonymous"
+  ></script>
+  </body>
+  </html>
+  
