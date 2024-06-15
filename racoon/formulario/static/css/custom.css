@@ -1,0 +1,84 @@
+
+.btn-salto {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-salto:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/*efecto glitch*/
+.glitch {
+    font-size: 4rem; /*tamaño del texto*/
+    font-weight: 700; /*peso de la fuente (negrita)*/
+    text-transform: uppercase; /*transforma el texto a mayúsculas*/
+    position: relative; /*posición relativa para efecto de desplazamiento*/
+
+    /*sombra del texto con colores RGB*/
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), /*sombra roja*/
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), /*sombra verde*/
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75); /*sombra azul*/
+
+    /*animación de glitch con duración de 500ms y repetición infinita*/
+    animation: glitch 500ms infinite;
+  }
+
+/*definición de la animación glitch*/
+@keyframes glitch {
+    /*inicio de la animación (0%)*/
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), /*sombra roja*/
+        -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), /*sombra verde*/
+        -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); /*sombra azul*/
+    }
+    
+    /*mitad de la animación (15%)*/
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), /*sombra roja*/
+        0.025em 0.025em 0 rgba(0, 255, 0, 0.75), /*sombra verde*/
+        -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); /*sombra azul*/
+    }
+    
+    /*mitad de la animación (50%)*/
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), /*sombra roja*/
+        0.05em 0 0 rgba(0, 255, 0, 0.75),  /*sombra verde*/
+        0 -0.05em 0 rgba(0, 0, 255, 0.75); /*sombra azul*/
+    }
+    
+    /*final de la animación (100%)*/
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), /*sombra roja*/
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), /*sombra verde*/
+        -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); /*sombra azul*/
+    }
+}
+
+td {
+    padding: 5px 10px; /* Establece un espacio de 5px en la parte superior e inferior y 10px en los lados izquierdo y derecho de cada celda */
+}
+
+.container {
+    background-color: rgb(1, 1, 1); /* Establece el color de fondo en negro utilizando el modelo RGB */
+    color: white; /* Establece el color del texto en blanco */
+    padding: 20px; /* Agrega un espacio de 20px alrededor del contenido del contenedor */
+}
+
+.borrar-curso { /* Aplica estilos al botón redondo de borrar curso */
+    background-color: red; /* Establece el color de fondo en rojo */
+    border-radius: 50%; /* Hace que el botón tenga bordes redondeados */
+    padding: 5px 10px; /* Establece un espacio de 5px en la parte superior e inferior y 10px en los lados izquierdo y derecho del botón */
+    text-decoration: none; /* Elimina cualquier decoración de texto */
+    color: white; /* Establece el color del texto en blanco */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+}
+
+
+
+.carritoIcon{
+  display: block;
+  margin-right: 30px;
+  float: right;
+}
