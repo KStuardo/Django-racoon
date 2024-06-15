@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
+from .models import Producto
 
 # Create your views here.
 #esto se copia por cada pagina colocando la raiz correspondiente 

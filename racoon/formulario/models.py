@@ -5,7 +5,7 @@ from django.db import models
 class Marca(models.Model):
     nombre= models.CharField(max_length=50)
 
-    def _str_(self):
+    def __str__(self):
         return self.nombre
     
 class Producto(models.Model):
@@ -15,9 +15,10 @@ class Producto(models.Model):
     marca=models.ForeignKey(Marca, on_delete=models.PROTECT)
     imagen= models.ImageField(upload_to="productos", null=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.nombre
-    
 
     #luego colocamos el siguiente comando en la cmd python manage.py makemigrations
     #y python manage.py migrate
+
+    
